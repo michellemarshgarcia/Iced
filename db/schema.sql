@@ -14,9 +14,10 @@ CREATE TABLE clients
 CREATE TABLE contacts
 (
 	id int NOT NULL AUTO_INCREMENT,
-	childcare_contact1_name varchar(40) NOT NULL,
-	childcare_contact1_email varchar(50) NOT NULL,
-	childcare_contact1_phone int NOT NULL,
+	name varchar(40) NOT NULL,
+	email varchar(50) NOT NULL,
+	phone int NOT NULL,
+    type varchar(20) NOT NULL,
 	client_id int NOT NULL,
 	PRIMARY KEY (id),
 	FOREIGN KEY (client_id) REFERENCES clients(id)
