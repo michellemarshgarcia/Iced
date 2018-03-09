@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+  <html lang="en">
+
+	<head>			
+	   <meta charset="utf-8">
+	   <title>ICED | SIGN UP</title>
+		 	
+		 		<!--ADD LINKS (JAVASCRIPT,CSS,BOOTSTRAP,ETC.)-->
+
+		 		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+			<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		
+		<link rel="stylesheet" href="style.css">
+
+		<script type="text/javascript" src=".js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+		 
+	</head>
+
+	<body>
+			
+		<nav class="navbar navbar-inverse">
+			<a class="navbar-brand" href="#">
+				<img class="logo" src="../iced245.png">
+		    </a>
+
+  			<div class="container-fluid">
+		    	<ul class="nav navbar-nav navbar-right">
+		    		<!--FIX NAVBAR TEXT COLOR!!!!!-->
+		    		<li><a class="contact" href="#">Contact Us</a></li>
+		      		<li><a class="about" href="#">About Us</a></li>
+		     		<li><a class="signUp" href="#">Sign Up</a></li>
+		     		<li>
+		     			<div class="btn-group">
+  							<button class="language-btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    							Language <span class="caret"></span>
+  							</button>
+  							
+  							<ul class="dropdown-menu">
+    						<li><a href="home.html">English</a></li>
+    						<li><a href="homesp.html">Español</a></li>
+ 							</ul>
+						</div>
+		     		</li>
+		    	</ul>
+  			</div>
+		</nav>	
+
+	<div class="container">
+
+		<div class="signUpHeader">
+		<h2>Contact Form</h2>
+
+		<h4>Fill out this form with your personal information as well as emergency contacts. If you already have an attorney, add them using the form, otherwise follow the instructions below.</h4>
+		</div>
+		
+		<br><br>
+
+		<form class="signUpForm">
+		  <div class="form-group">
+			<h3>Personal Information</h3>
+
+		    <label for="name">Name</label>
+		    <input type="name" class="form-control" id="name" placeholder="Name">  
+		  </div>
+
+		  <div class="form-group">
+		  	<label for="phone">Phone Number</label>
+		    <input type="phone" class="form-control" id="phone" placeholder="eg: 123-456-7890">  
+		  </div>
+
+		  <div class="form-group">
+		  	<label for="name">Email</label>
+		    <input type="email" class="form-control" id="email" placeholder="Email">  
+		  </div>
+		  
+		  <br><br>
+
+		  <h3>Emergency Contacts</h3>
+
+			<br>
+
+			<h4>First Emergency Contact</h4>
+			<h6>*Required Fields</h6>
+			<br>
+		  <div class="form-group">
+		   <label for="contactName1">Emergency Contact's Name</label>
+		   <input type="name" class="form-control" id="contactName1" placeholder="Name">  
+		  </div>
+
+		  <div class="form-group emergencyContact1">
+		  	<label for="contactPhone1">Emergency Contact's Phone Number</label>
+		    <input type="phone" class="form-control" id="contactPhone1" placeholder="eg: 123-456-7890">  
+		  </div>
+
+		  <div class="form-group">
+		  	<label for="contactEmail1">Emergency Contact's Email</label>
+		    <input type="email" class="form-control" id="contactEmail1" placeholder="Email">  
+		  </div>
+
+		  <div class="dropdown">
+			<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+			 	Contact Type
+			  <span class="caret"></span>
+			</button>
+			
+			<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+			  <li><a href="#">Family</a></li>
+			  <li><a href="#">Childcare</a></li>
+			  <li><a href="#">Vehicle Pickup</a></li>
+			  <li><a href="#">Work</a></li>
+			  <li><a href="#">School</a></li>
+			  <li><a href="#">Other</a></li>
+			</ul>
+		  </div>
+			
+			<br>
+
+			<h4>Second Emergency Contact</h4>
+
+		  <div class="form-group">
+		   <label for="contactName2">Emergency Contact's Name</label>
+		   <input type="name" class="form-control" id="contactName1" placeholder="Name">  
+		  </div>
+
+		  <div class="form-group">
+		  	<label for="contactPhone2">Emergency Contact's Phone Number</label>
+		    <input type="phone" class="form-control" id="contactPhone1" placeholder="eg: 123-456-7890">  
+		  </div>
+
+		  <div class="form-group">
+		  	<label for="contactEmail3">Emergency Contact's Email</label>
+		    <input type="email" class="form-control" id="contactEmail1" placeholder="Email">  
+		  </div>
+
+		  <div class="dropdown">
+			<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+			 	Contact Type
+			  <span class="caret"></span>
+			</button>
+			
+			<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+			  <li><a href="#">Family</a></li>
+			  <li><a href="#">Childcare</a></li>
+			  <li><a href="#">Vehicle Pickup</a></li>
+			  <li><a href="#">Work</a></li>
+			  <li><a href="#">School</a></li>
+			  <li><a href="#">Other</a></li>
+			</ul>
+		  </div>
+
+		  <br>
+
+		  <h4>Third Emergency Contact</h4>
+
+		  <div class="form-group">
+		   <label for="contactName2">Emergency Contact's Name</label>
+		   <input type="name" class="form-control" id="contactName1" placeholder="Name">  
+		  </div>
+
+		  <div class="form-group">
+		  	<label for="contactPhone2">Emergency Contact's Phone Number</label>
+		    <input type="phone" class="form-control" id="contactPhone1" placeholder="eg: 123-456-7890">  
+		  </div>
+
+		  <div class="form-group">
+		  	<label for="contactEmail3">Emergency Contact's Email</label>
+		    <input type="email" class="form-control" id="contactEmail1" placeholder="Email">  
+		  </div>
+
+		  <div class="dropdown">
+			<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+			 	Contact Type
+			  <span class="caret"></span>
+			</button>
+			
+			<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+			  <li><a href="#">Family</a></li>
+			  <li><a href="#">Childcare</a></li>
+			  <li><a href="#">Vehicle Pickup</a></li>
+			  <li><a href="#">Work</a></li>
+			  <li><a href="#">School</a></li>
+			  <li><a href="#">Other</a></li>
+			</ul>
+		  </div>
+
+		  <br>
+
+			<h4>Attorney Information</h4>
+
+		  <div class="form-group">
+		   <label for="attorneyName">Attorney's Name</label>
+		   <input type="name" class="form-control" id="attorneyName" placeholder="Name">  
+		  </div>
+
+		  <div class="form-group">
+		  	<label for="attorneyPhone">Attorney's Phone Number</label>
+		    <input type="phone" class="form-control" id="attorneyPhone" placeholder="eg: 123-456-7890">  
+		  </div>
+
+		  <div class="form-group">
+		  	<label for="attorneyEmail">Attorney's Email</label>
+		    <input type="email" class="form-control" id="attorneyEmail" placeholder="Email">  
+		  </div>
+			
+		  
+		  
+
+		   
+		  
+		<!--  <button type="submit" class="btn btn-default">Submit</button>-->
+		</form>
+		
+		
+	</div><!--CLOSING CONTAINER DIV-->
+
+	
+	  
+
+			
+
+	<script>
+				//ONLY USE THIS IS YOU DON'T HAVE AN EXTERNAL JS FILE
+		if ("emergencyContact1" ===)
+
+		});
+
+	</script>
+
+
+		</body>
+
+	</html>
