@@ -2,8 +2,9 @@ var express = require("express");
 
 var router = express.Router();
 
-// Import the model (user.js) to use its database functions.
-var user = require("../models/user.js");
+// Import the model (client.js) to use its database functions.
+var user = require("../../models/client.js");
+var contact = require("../../models/contact.js");
 
 // Create all our routes and set up logic within those routes where required.
 router.get("/", function(req, res) {

@@ -1,5 +1,5 @@
 // Import the ORM to create functions that will interact with the database.
-var orm = require("../config/orm.js");
+var orm = require("../config/connections.js");
 
 var client = {
   all: function(cb) {
@@ -20,5 +20,5 @@ var client = {
   }
 };
 
-// Export the database functions for the controller (Controller.js).
+// Export the database functions for the controller (client.js).
 module.exports = client;
