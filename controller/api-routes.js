@@ -108,7 +108,7 @@ module.exports = function(app) {
         body: 'Hello this is an alert from immigration service ICED. ' + "Roberto" + ' has been detained by ICE.',
       },
       (err, message) => {
-        console.log(message.sid);
+        console.log(err, message);
       }
     );
   });
