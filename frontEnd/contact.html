@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+  <html lang="en">
+
+	<head>			
+	   <meta charset="utf-8">
+	   <title>ICED | CONTACT US</title>
+		 	
+		 		<!--ADD LINKS (JAVASCRIPT,CSS,BOOTSTRAP,ETC.)-->
+
+		 		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+			<!-- Optional theme -->
+		<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">-->
+		
+		<link rel="stylesheet" href="style.css">
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		 
+	</head>
+
+	<body>
+		
+			
+			<nav class="navbar navbar-inverse">
+			<a class="navbar-brand" href="home.html">
+				<img class="logo" src="../icedallwhite.png">
+		    </a>
+
+  			<div class="container-fluid">
+		    	<ul class="nav navbar-nav navbar-right">
+		    		<!--FIX NAVBAR TEXT COLOR!!!!!-->
+		    		<li><a class="contact" href="home.html">Home</a></li>
+		      		<li><a class="about" href="about.html">About Us</a></li>
+		     		<li><a class="signUp" href="sign-up.html">Sign Up</a></li>
+		     		<li>
+		     			<div class="btn-group">
+  							<button class="language-btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    							Language <span class="caret"></span>
+  							</button>
+  							
+  							<ul class="dropdown-menu">
+    						<li><a href="home.html">English</a></li>
+    						<li><a href="homesp.html">Español</a></li>
+ 							</ul>
+						</div>
+		     		</li>
+		    	</ul>
+  			</div>
+		</nav>	
+
+		
+
+	<div class="container">	
+		<div class="row">
+			<div class="col-md-8">
+		<div class="contactContainer">
+			<h1 class="contactSection"> Contact Section </h1>
+		
+			<div class="form">
+				<form>
+				  <div class="form-group">
+				    <label for="userName">Name:</label>
+				    <input type="name" class="form-control" id="userName" placeholder="eg: Jane Doe">
+				  </div>
+				  <div class="form-group">
+				    <label for="userEmail">Email:</label>
+				    <input type="email" class="form-control" id="userEmail" placeholder="eg: email@email.com">
+				  </div>
+				  <div class="form-group">
+				  	<label for="userComments">Comments:</label>
+				    <textarea class="form-control" rows="6" id="userComments"></textarea>
+				  </div>
+
+				  <button type="submit" class="btn submit" id="submitButton">Submit</button>
+				</form>
+			</div><!--Closing Form Div-->
+		</div><!--CLOSING CONTAINER DIV-->	
+	</div>
+
+		<div class="col-md-4">
+		<div class="contactSideBar">
+		<h2>Contact Options</h2>
+			<p>
+				<strong>American Immigration Council</strong>
+				<br>
+				1331 G St. NW 
+				<br>
+				Suite 200
+				<br>
+				Washington, D.C., 20005
+				<br>
+				Phone: (202) 507-7500
+				<br>
+				<a href="https://www.americanimmigrationcouncil.org/">www.americanimmigrationcouncil.org</a>
+			</p>
+
+			<p>
+				<strong>American Immigration Lawyers Association</strong>
+				<br>
+				1331 G Street, NW
+				<br>
+				Suite 300
+				<br>
+				Washington, DC 20005
+				<br>
+				Phone: (202) 507-7600
+				<br>
+				<a href="http://www.aila.org/">http://www.aila.org</a>
+			</p>
+
+			<p>
+				<strong>National Immigration Law Center</strong>
+				<br>
+				(MAILING ADDRESS)
+				<br>
+				3450 Wilshire Blvd. #108 – 62
+				<br>
+				Los Angeles, CA 90010
+				<br>
+				(213) 639-3900
+				<br>
+				<a href="https://www.nilc.org/">www.nilc.org</a>
+			</p>
+		</div>
+	</div>
+
+	</div>
+	</div>
+	    
+
+			
+			
+
+				<!--ONLY USE <STYLE> TAGS IF YOU DON'T HAVE A SEPERATE STYLE.CSS FILE-->
+	<style type="text/css">
+
+
+
+	</style>
+
+	<script>
+				//ONLY USE THIS IS YOU DON'T HAVE AN EXTERNAL JS FILE
+				$("#submitButton").on("click", function(event) {
+					event.preventDefault();
+					var newContact= {
+						name: $("#userName").val().trim(),
+						email: $("#userEmail").val().trim(),
+						comments: $("#userComments").val().trim()
+						// uniqueId: $("#reserve_uniqueID").val().trim()
+					};
+
+					$.post("routeName", newContact)
+					.then(function(data) {
+						console.log(data);
+						alert("Thanks for the feedback!")
+					})
+				})
+
+		// $(document).ready(function() {
+
+		// 	database.ref().on("child_added", function(snapshot) {
+		// 	var name = snapshot.val().name
+		// 	var email = snapshot.val().email
+		// 	var comments = snapshot.val().comments
+								
+		// });//closing snapshot function
+
+		// $("#submitButton").on("click", function() {
+		// 	event.preventDefault()
+
+		// 	var name = $("#userName").val().trim();
+		// 	var email = $("#userEmail").val().trim();
+		// 	var comments = $("#userComments").val().trim();
+
+		// 	var userInfo = {
+		// 		name: name,
+		// 		email: email,
+		// 		comments: comments
+		// 	}//closing object
+		// 	console.log(userInfo)
+		// 	database.ref().push(userInfo);
+
+		// 	$("#userName").val("");
+		// 	$("#userEmail").val("");
+		// 	$("#userComments").val("");
+
+		// 	});//closing out submitButton function.
+		
+		//  });
+			</script>
+
+		<script type="text/javascript"></script>
+
+		</body>
+
+	</html>
