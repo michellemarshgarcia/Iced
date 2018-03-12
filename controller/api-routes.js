@@ -89,6 +89,28 @@ module.exports = function(app) {
       res.json(phone);
     
     });
+
+
+  });
+
+
+  app.post("/sendalert", function(req, res) {
+    var accountSid = 'ACd81bf947a5dd7bb7d5783ae98246872b';
+    var authToken = 'e4c243b27f287ab754769308dae8331a';
+
+    // require the Twilio module and create a REST client
+    var clientContact = require('twilio')(accountSid, authToken);
+
+    clientContact.messages.create(
+      {
+        to: "+17202983511",
+        from: '+13347815558',
+        body: 'Hello this is an alert from immigration service ICED. ' + "Roberto" + ' has been detained by ICE.',
+      },
+      (err, message) => {
+        console.log(message.sid);
+      }
+    );
   });
 
 
