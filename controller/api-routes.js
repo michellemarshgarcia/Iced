@@ -20,6 +20,7 @@ module.exports = function(app) {
       //   // Send back the ID of the new quote
       //   res.json({ id: result.insertId });
       // });
+      console.log(req.body);
       db.Client.create(req.body).then(function(newClient) {
         console.log("New Client: ");
         console.log(newClient);
@@ -80,11 +81,14 @@ module.exports = function(app) {
   app.get("/api/contacts", function(req, res) {
     Contact.findAll({
       where: {
-        phone: NOT NULL,
+        phone: {
+          $ne: null
+        }
       }
     }).then(function(phone) {
       res.json(phone);
     
+    });
   });
 
 
