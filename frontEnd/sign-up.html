@@ -27,16 +27,16 @@
 	<body>
 			
 		<nav class="navbar navbar-inverse">
-			<a class="navbar-brand" href="#">
-				<img class="logo" src="../iced245.png">
+			<a class="navbar-brand" href="home.html">
+				<img class="logo" src="../icedallwhite.png">
 		    </a>
 
   			<div class="container-fluid">
 		    	<ul class="nav navbar-nav navbar-right">
 		    		<!--FIX NAVBAR TEXT COLOR!!!!!-->
-		    		<li><a class="contact" href="#">Contact Us</a></li>
-		      		<li><a class="about" href="#">About Us</a></li>
-		     		<li><a class="signUp" href="#">Sign Up</a></li>
+		    		<li><a class="signUp" href="home.html">Home</a></li>
+		    		<li><a class="contact" href="resources.html">Helpful Resources</a></li>
+		     		
 		     		<li>
 		     			<div class="btn-group">
   							<button class="language-btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -64,49 +64,55 @@
 		<br><br>
 
 		<form class="signUpForm">
+
+		<div class="personalSec">	
 		  <div class="form-group">
 			<h3>Personal Information</h3>
+			<h6>*Required Fields</h6>
 
-		    <label for="name">Name</label>
+		    <label for="name">Name:</label>
 		    <input type="name" class="form-control" id="name" placeholder="Name">  
 		  </div>
 
 		  <div class="form-group">
-		  	<label for="phone">Phone Number</label>
+		  	<label for="phone">Phone Number:</label>
 		    <input type="phone" class="form-control" id="phone" placeholder="eg: 123-456-7890">  
 		  </div>
 
 		  <div class="form-group">
-		  	<label for="name">Email</label>
+		  	<label for="name">Email:</label>
 		    <input type="email" class="form-control" id="email" placeholder="Email">  
 		  </div>
+
+		</div> <!--closing out Personal Info Section  -->
 		  
 		  <br><br>
 
 		  <h3>Emergency Contacts</h3>
 
 			<br>
-
+		<div class="firstSec">
+		  <div class="firstContact">
 			<h4>First Emergency Contact</h4>
 			<h6>*Required Fields</h6>
 			<br>
 		  <div class="form-group">
-		   <label for="contactName1">Emergency Contact's Name</label>
+		   <label for="contactName1">Emergency Contact's Name:</label>
 		   <input type="name" class="form-control" id="contactName1" placeholder="Name">  
 		  </div>
 
 		  <div class="form-group emergencyContact1">
-		  	<label for="contactPhone1">Emergency Contact's Phone Number</label>
+		  	<label for="contactPhone1">Emergency Contact's Phone Number:</label>
 		    <input type="phone" class="form-control" id="contactPhone1" placeholder="eg: 123-456-7890">  
 		  </div>
 
 		  <div class="form-group">
-		  	<label for="contactEmail1">Emergency Contact's Email</label>
+		  	<label for="contactEmail1">Emergency Contact's Email:</label>
 		    <input type="email" class="form-control" id="contactEmail1" placeholder="Email">  
 		  </div>
 
 		  <div class="dropdown">
-			<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+			<button class="btn btn-default dropdown-toggle" type="button" id="contactType1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 			 	Contact Type
 			  <span class="caret"></span>
 			</button>
@@ -120,28 +126,31 @@
 			  <li><a href="#">Other</a></li>
 			</ul>
 		  </div>
-			
+		  </div>
+		</div><!-- closing first contact section -->
 			<br>
-
+		
+		<div class="secondSec">
+		  <div class="secondContact">
 			<h4>Second Emergency Contact</h4>
 
 		  <div class="form-group">
-		   <label for="contactName2">Emergency Contact's Name</label>
+		   <label for="contactName2">Emergency Contact's Name:</label>
 		   <input type="name" class="form-control" id="contactName1" placeholder="Name">  
 		  </div>
 
 		  <div class="form-group">
-		  	<label for="contactPhone2">Emergency Contact's Phone Number</label>
+		  	<label for="contactPhone2">Emergency Contact's Phone Number:</label>
 		    <input type="phone" class="form-control" id="contactPhone1" placeholder="eg: 123-456-7890">  
 		  </div>
 
 		  <div class="form-group">
-		  	<label for="contactEmail3">Emergency Contact's Email</label>
+		  	<label for="contactEmail3">Emergency Contact's Email:</label>
 		    <input type="email" class="form-control" id="contactEmail1" placeholder="Email">  
 		  </div>
 
 		  <div class="dropdown">
-			<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+			<button class="btn btn-default dropdown-toggle" type="button" id="contactType2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 			 	Contact Type
 			  <span class="caret"></span>
 			</button>
@@ -155,28 +164,32 @@
 			  <li><a href="#">Other</a></li>
 			</ul>
 		  </div>
+		  </div>
+		</div><!-- closing second contact section -->
 
 		  <br>
 
+		<div class="thirdSec">
+		  <div class="thirdContact">
 		  <h4>Third Emergency Contact</h4>
 
 		  <div class="form-group">
-		   <label for="contactName2">Emergency Contact's Name</label>
+		   <label for="contactName2">Emergency Contact's Name:</label>
 		   <input type="name" class="form-control" id="contactName1" placeholder="Name">  
 		  </div>
 
 		  <div class="form-group">
-		  	<label for="contactPhone2">Emergency Contact's Phone Number</label>
+		  	<label for="contactPhone2">Emergency Contact's Phone Number:</label>
 		    <input type="phone" class="form-control" id="contactPhone1" placeholder="eg: 123-456-7890">  
 		  </div>
 
 		  <div class="form-group">
-		  	<label for="contactEmail3">Emergency Contact's Email</label>
+		  	<label for="contactEmail3">Emergency Contact's Email:</label>
 		    <input type="email" class="form-control" id="contactEmail1" placeholder="Email">  
 		  </div>
 
 		  <div class="dropdown">
-			<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+			<button class="btn btn-default dropdown-toggle" type="button" id="contactType3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 			 	Contact Type
 			  <span class="caret"></span>
 			</button>
@@ -190,32 +203,38 @@
 			  <li><a href="#">Other</a></li>
 			</ul>
 		  </div>
+		  </div>
+		</div><!-- closing third contact section -->
 
 		  <br>
 
+		<div class="attorneySec">
+		  <div class="attorneyContact">
 			<h4>Attorney Information</h4>
 
 		  <div class="form-group">
-		   <label for="attorneyName">Attorney's Name</label>
+		   <label for="attorneyName">Attorney's Name:</label>
 		   <input type="name" class="form-control" id="attorneyName" placeholder="Name">  
 		  </div>
 
 		  <div class="form-group">
-		  	<label for="attorneyPhone">Attorney's Phone Number</label>
+		  	<label for="attorneyPhone">Attorney's Phone Number:</label>
 		    <input type="phone" class="form-control" id="attorneyPhone" placeholder="eg: 123-456-7890">  
 		  </div>
 
 		  <div class="form-group">
-		  	<label for="attorneyEmail">Attorney's Email</label>
+		  	<label for="attorneyEmail">Attorney's Email:</label>
 		    <input type="email" class="form-control" id="attorneyEmail" placeholder="Email">  
 		  </div>
-			
-		  
-		  
 
-		   
-		  
-		<!--  <button type="submit" class="btn btn-default">Submit</button>-->
+		  <h4>Don't have an attorney? Find one <a href="http://www.ailalawyer.org/" target="_blank" style="color:red;">here</a>!</h4>
+
+		  </div>
+		</div><!-- closing attorney section -->
+
+		<br>
+		
+		  <button type="submit" class="btn btn-default">Submit</button>
 		</form>
 		
 		
@@ -228,7 +247,11 @@
 
 	<script>
 				//ONLY USE THIS IS YOU DON'T HAVE AN EXTERNAL JS FILE
-		if ("emergencyContact1" ===)
+		if ("#contactType1" === true) {
+			$("secondContact").style.display=block;
+		} else {
+			$("secondContact").style.display=none;
+		}
 
 		});
 

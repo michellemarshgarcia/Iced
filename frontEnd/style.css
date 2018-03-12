@@ -99,7 +99,7 @@ body {
 }
 
 
-.contactContainer {
+/*.contactContainer {
 	width:600px;
 	
 	background-color: #243ea6;
@@ -113,45 +113,37 @@ body {
 
 
 			
-}
+}*/
 
 .contactSection {
-	text-align:center;
-	/*text-shadow: 5px 5px 2px #475c68;*/
-	color:white;
+	width:600px;
+ 	display:block;
+ 	/*float: right;*/
+ 	margin-top:40px;
+ 	margin-left:30px;
+ 	margin-bottom:40px;
+	/*border-width:2px;
+	border-style:solid;
+ 	border-color:black;
+ 	border-radius:10px;*/
+ 	padding:10px;
+ 	padding-right:20px;
+ 	padding-left:20px;
+ 	background:#244ea6;
+ 	color:white;
+ 	text-align: center;
+ 	opacity:.9;
 			
 }
 
-		
-
-.form {
-	padding:20px;
+.contactSection a {
 	color:white;
 }
-	
-.btn {
-	background-color: white;
-	color:#245ea6;
-}
 
-.glyphicon {
-	color:#475c68;
-
-}
-
-.btn-group {
-	float:right;
-	margin-right: 30px;
-	margin-top: 10px;
-
-
-}
-
-/*ABOUT PAGE CSS*/
-
-.profile {
-	margin-right:80px;
-	margin-top:10px;
+.backgroundLogo {
+	width:300px;
+	margin:60px 0px 0px 60px;
+	float:left;
 }
 
 
@@ -167,9 +159,13 @@ body {
 
 	width:50%;
 	margin:auto;
+	margin-bottom:100px;
 	background:#243ea6;
 	opacity:.85;
 	padding:20px;
 	border-radius:10px;
 
+
 }
+
+
