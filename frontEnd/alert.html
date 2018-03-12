@@ -1,103 +1,114 @@
 <!DOCTYPE html>
-  <html lang="en">
+  
+<html lang="en">
 
-	<head>			
-	   <meta charset="utf-8">
-	   <title>ICED | ALERT</title>
-		 	
-		 		<!--ADD LINKS (JAVASCRIPT,CSS,BOOTSTRAP,ETC.)-->
+<head>			
+	<meta charset="utf-8">
+	<title>ICED | ALERT</title>
+	 	
+	 		<!--ADD LINKS (JAVASCRIPT,CSS,BOOTSTRAP,ETC.)-->
 
-		 		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	 		<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-			<!-- Optional theme -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-		
-		<link rel="stylesheet" href="style.css">
+		<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="style.css">
 
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		 
-	</head>
+</head>
 
-	<body>
-			
-		<nav class="navbar navbar-inverse">
-			<a class="navbar-brand" href="#">
-		    	<img class="logo" src="../icedallwhite.png">
-		    </a>
+<body>
+		
+	<nav class="navbar navbar-inverse">
+		<a class="navbar-brand" href="home.html">
+	    	<img class="logo" src="../icedallwhite.png">
+	    </a>
 
-  			<div class="container-fluid">
-		    	<ul class="nav navbar-nav navbar-right">
-		    		<!--FIX NAVBAR TEXT COLOR!!!!!-->
-		    		<li><a class="contact" href="#">Contact Us</a></li>
-		      		<li><a class="about" href="#">About Us</a></li>
-		     		<li><a class="signUp" href="#">Sign Up</a></li>
-		     		<li>
-		     			<div class="btn-group">
-  							<button class="language-btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    							Language <span class="caret"></span>
-  							</button>
-  							
-  							<ul class="dropdown-menu">
-    						<li><a href="home.html">English</a></li>
-    						<li><a href="homesp.html">Español</a></li>
- 							</ul>
-						</div>
-		     		</li>
-		    	</ul>
-  			</div>
-		</nav>	
+			<div class="container-fluid">
+	    	<ul class="nav navbar-nav navbar-right">
+	    		<!--FIX NAVBAR TEXT COLOR!!!!!-->
+	    		<li><a class="contact" href="#">Contact Us</a></li>
+	      		<li><a class="about" href="#">About Us</a></li>
+	     		<li><a class="signUp" href="#">Sign Up</a></li>
+	     		<li>
+	     			<div class="btn-group">
+						<button class="language-btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Language <span class="caret"></span>
+						</button>
+							
+					<ul class="dropdown-menu">
+						<li><a href="home.html">English</a></li>
+						<li><a href="homesp.html">Español</a></li>
+					</ul>
+					</div>
+	     		</li>
+	    	</ul>
+			</div>
+	</nav>	
 
 	<div class="container">
-		<div class="row">
+	<div class="row">
 
 		<div class="col-md-8">
+		
 		<div class= "description">
 			<h1>Ready To Go</h1>
-			<p>	
-				You are signed up and ready to go, if you are detained, press the ALERT button and your information will be sent.
-			</p>
-		
+				<p>	
+					You are signed up and ready to go, if you are detained, press the ALERT button and your information will be sent.
+				</p>
+	
 
-		<br><br><br>
+				<br><br><br>
 
-		<div>
-			<button class= "alertBtn">
-				ALERT
-			</button>
-		</div>
+			<div>
+				<button class= "alertBtn">
+					ALERT
+				</button>
+			</div>
+	
+		</div><!--CLosing Description Div-->
 
-			
-		</div><!--Closing Description Div-->
-		</div>
+	</div><!--Closing Container Div-->	
 
-		<div class="col-md-4">
+	<div class="col-md-4">
+
 		<div class="sideBar">
 			<h2>Immigration News</h2>
-			<div class="news">
-			
-			</div>
+		
+				<div class="news">
+		
+				</div>
+		</div>
 
 	</div>
 
-	</div>
+
+ 
+<script>
+	$(".alertBtn").click(function(){ 
+		
+		event.preventDefault();
+
+		$.ajax({
+			url: "/sendalert",
+			method: "POST"
+		}).then(function() {
+			alert("You're emergency contacts and/or attorney have been notified.")
+		})
+		})
 
 	
-	  
 
-			
+</script>
 
-	<script>
-		
+<script type="text/javascript" src="news.js"></script>
+<script type="text/javascript" src="alert.js"></script>
+	
+</body>
 
-		
-
-	</script>
-
-	<script type="text/javascript" src="news.js"></script>
-		</body>
-
-	</html>
+</html>
