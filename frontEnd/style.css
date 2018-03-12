@@ -25,6 +25,7 @@ body {
 .language-btn {
 	background:black;
 	color:white;
+	margin:8px 8px 0px 0px;
 	
 }
 
@@ -136,7 +137,7 @@ body {
 			
 }
 
-.contactSection a {
+.contactSection a:hover {
 	color:white;
 }
 
@@ -168,4 +169,13 @@ body {
 
 }
 
+/*ALERT STYLING*/
 
+.alertBtn {
+	width:150px;
+ 	height:80px;
+ 	margin-left:150px;
+ 	border-radius:10px;
+ 	background-color: red;
+ 	color:white;
+}

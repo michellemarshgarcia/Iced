@@ -234,7 +234,7 @@
 
 		<br>
 		
-		  <button type="submit" class="btn btn-default">Submit</button>
+		  <button type="submit" class="subtmitBtn btn-default">Submit</button>
 		</form>
 		
 		
@@ -247,14 +247,35 @@
 
 	<script>
 				//ONLY USE THIS IS YOU DON'T HAVE AN EXTERNAL JS FILE
-		if ("#contactType1" === true) {
-			$("secondContact").style.display=block;
-		} else {
-			$("secondContact").style.display=none;
-		}
+		$(".submitBtn").on("click", function(event) {
+		event.preventDefault();
+		var newClient= {
+			name: $(".name").val().trim(),
+			phone: $(".phone").val().trim(),
+			email: $(".email").val().
+		};
 
-		});
+		$.post("/api/clients", newClient)
+		.then(function(data) {
+			console.log(data);
+			alert("Your Contact Information Has Been Added")
+		})
+	})
 
+		$(".submitBtn").on("click", function(event) {
+		event.preventDefault();
+		var newClient= {
+			name: $(".name").val().trim(),
+			phone: $(".phone").val().trim(),
+			email: $(".email").val().
+		};
+
+		$.post("/api/contacts", newClient)
+		.then(function(data) {
+			console.log(data);
+			alert("Your Contact Information Has Been Added")
+		})
+	})
 	</script>
 
 
